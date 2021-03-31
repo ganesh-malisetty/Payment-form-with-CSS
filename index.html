@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Payment Form with CSS</title>
+
+    <link rel="stylesheet" href="Payment form with css.css">
+</head>
+<body>
+
+<form action="paid.html">
+
+    <div class="container" >
+
+    <h1 class="heading">Payment Form ( including CSS )</h1><hr>
+
+    <p>required fields are followed by *</p>
+
+    <h2>Contact Information</h2>
+
+   Name:*<input type="text" value="" size ="30" required placeholder="Enter your name"> <br><br>
+
+   <fieldset><br><br>
+
+       <legend>Gender *</legend>
+
+       <input type="radio" name="gender" required> Male
+
+       <input type="radio" name="gender"required> Female <br><br>
+      
+   </fieldset><br><br>
+
+   Address (Optional): <textarea name="address" id="address" cols="170" rows="10" placeholder="Enter your Address here"></textarea> <br><br><br>
+
+   Email: *<input type="email" name="email" id="email" required placeholder="test@gmail.com"><br><br><br>
+
+   Postal code:* <input type="number" required placeholder="PIN code" minlength="6" maxlength="6" size="6"><br><br><br>
+
+   <h2>Payment Information</h2> <br>
+
+
+   <input type="radio" name="card" id="card" required> Debit card
+
+   <input type="radio" name="card" id="card"required> Credit card
+
+   <br><br>
+
+   <p>Card Type: *
+
+   <select name="card type" id="card type" required >
+        
+
+    <option value="" selected disabled>Select a Card Type</option>
+
+    <option value="visa">Visa</option>
+
+    <option value="rupay">Rupay</option>
+
+    <option value="mastercard">Mastercard</option>
+   
+   </select>
+   </p>
+  <br>
+  Card Number:* <input type="number" name="cardnumber" id="cardnumber" required placeholder="1234 1234 1234 1234"><br><br>
+
+  Name on Card:* <input type="text" name="name" id="name" required placeholder="Name on card"><br><br>
+
+  Expiration date:* <input type="month" required><br><br>
+
+
+  CVV:* <input type="Password" name="cvv" id="cvv" required placeholder="123" minlength="3" maxlength="3"><br><br>
+
+  Enter amount:* <input type="number" name="amount" id="amount" min ="500" max="10000" size="30" placeholder="Enter amount between 500 and 10000" required> <br><br>
+
+  <input type="submit" value="Pay Now">
+
+
+
+
+    </div>
+
+</form>
+    
+</body>
+</html>
